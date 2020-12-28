@@ -17,7 +17,10 @@ function listTeams(){
   
 }
 
-function addItem(){
-
+function addItem(item){
+    var newLi=document.createElement("li");
+    newLi.appendChild(document.createTextNode(item));
+    var ul=document.getElementById("list");
+    ul.appendChild(newLi);
 }
 
